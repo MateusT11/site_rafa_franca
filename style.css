@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: #F2F2F2;
+    color: #1E2A38;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+.faixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0;
+    background: #FFFFFF;
+    margin-bottom: 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(30,42,56,0.08);
+    transition: box-shadow 0.3s;
+}
+.faixa:hover {
+    box-shadow: 0 8px 32px rgba(79,140,255,0.12);
+}
+.faixa-apresentacao {
+    background: linear-gradient(90deg, #1E2A38 60%, #2ECC71 100%);
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(30,42,56,0.10);
+}
+.personal-foto {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 16px rgba(67,233,123,0.15);
+}
+.faixa-servicos ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+.faixa-servicos li {
+    background: #A4E100;
+    color: #1E2A38;
+    margin: 0;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(164,225,0,0.10);
+    letter-spacing: 0.5px;
+    transition: transform 0.2s, background 0.2s;
+}
+.faixa-servicos li:hover {
+    transform: scale(1.05);
+    background: #2ECC71;
+    color: #fff;
+}
+.faixa-vantagens blockquote {
+    font-style: italic;
+    color: #2ECC71;
+    margin-top: 20px;
+    background: #F2F2F2;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(46,204,113,0.08);
+}
+.faixa-galeria .galeria-imagens {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.faixa-galeria img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(30,42,56,0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.faixa-galeria img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px rgba(30,42,56,0.18);
+}
+.faixa-contato .form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 20px auto;
+    background: #F2F2F2;
+    padding: 24px 18px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(30,42,56,0.08);
+}
+.form-contato input,
+.form-contato textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #2ECC71;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.form-contato button {
+    background: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(255,107,107,0.10);
+    letter-spacing: 0.5px;
+}
+.form-contato button:hover {
+    background: #A4E100;
+    color: #1E2A38;
+    transform: scale(1.04);
+}
+footer {
+    background: #1E2A38;
+    color: #fff;
+    text-align: center;
+    padding: 28px 0 10px 0;
+    border-radius: 12px;
+    margin-top: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 700px) {
+    .container {
+        padding: 10px;
+    }
+    .faixa {
+        padding: 18px 0;
+    }
+    .faixa-galeria .galeria-imagens {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .faixa-galeria img {
+        width: 100%;
+        height: 180px;
+    }
+    .form-contato {
+        max-width: 100%;
+        padding: 16px 8px;
+    }
+}
